@@ -16,18 +16,18 @@
 
 デスクトップの `Ubuntu` を起動
 
-"host.server"のアドレスは当日お知らせします。
+"server.address"のアドレスは当日お知らせします。
 
 ```
-$ ssh [共有サーバーのアカウント名]@host.server
-xxxxx@host.server's password: 
+$ ssh [共有サーバーのアカウント名]@server.address
+xxxxx@server.address's password: 
 # [パスワードの入力]
 Last login: Thu Dec 17 15:17:20 2020 from XX
 
-[xxxxx@host.server ~]$
+[xxxxx@server.address ~]$
 
 # 共有フォルダの確認
-[xxxxx@host.server ~]$ ls /mnt/bioInfo2020_share
+[xxxxx@server.address ~]$ ls /mnt/bioInfo2020_share
 ```
 
 
@@ -40,10 +40,10 @@ Last login: Thu Dec 17 15:17:20 2020 from XX
 
 ```
 login as: [共有サーバーのアカウント名]
-xxxxx@host.server's password: 
+xxxxx@server.address's password: 
 # [パスワードの入力]
 
-[xxxxx@host.server ~]$
+[xxxxx@server.address ~]$
 
 # 共有フォルダの確認
 $ ls /mnt/bioInfo2020_share
@@ -62,15 +62,15 @@ Dockに追加しておいたほうが便利
 
 
 ```
-$ ssh [共有サーバーのアカウント名]@host.server
-xxxxx@host.server's password: 
+$ ssh [共有サーバーのアカウント名]@server.address
+xxxxx@server.address's password: 
 # [パスワードの入力]
 Last login: Thu Dec 17 15:17:20 2020 from XX
 
-[xxxxx@host.server ~]$
+[xxxxx@server.address ~]$
 
 # 共有フォルダの確認
-[xxxxx@host.server ~]$ ls /mnt/bioInfo2020_share
+[xxxxx@server.address ~]$ ls /mnt/bioInfo2020_share
 ```
 
 
@@ -99,7 +99,7 @@ Last login: Thu Dec 17 15:17:20 2020 from XX
 
 
 
-**サーバ:** host.server（当日にお知らせします）
+**サーバ:** server.address（当日にお知らせします）
 
 **ポート:** 22
 
