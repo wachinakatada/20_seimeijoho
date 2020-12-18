@@ -85,7 +85,7 @@ plot(G2_1, G2_3, log="xy", col="black", pch=16, cex=0.5, xlim = c(1, 10000), yli
 dev.off()
 ```
 
-![scatter](https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/DE.scatter.jpeg)
+![scatter](https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/DE.scatter.jpeg  =1024x768)
 
 
 ## 発現解析
