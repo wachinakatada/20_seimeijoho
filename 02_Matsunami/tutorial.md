@@ -33,7 +33,7 @@ setwd("/home/hoge/RNAseq_class")
 
 データの読み込み
 
-今回はシミュレーションで作ったデータを使います
+今回は2グループ（それぞれ繰り返し3回）のシミュレーションで作ったデータを使います
 
 ```R
 d <- read.table("https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/SimData.txt",sep="\t",header=T,row.names=1)
@@ -92,6 +92,7 @@ dev.off()
 
 ## 発現解析
 
+正規化する
 
 ```R
 #比較グループを設定
@@ -102,5 +103,15 @@ D <- DGEList(d, group=grp)
 D <- calcNormFactors(D) 
 ```
 
+MDS plotを書く
+
+```R
+jpeg('DE.MDS.jpeg')
+#plotMDS(D, labels=grp)
+plotMDS(D, labels=grp, xlim = c(-5, 5), ylim = c(-5, 5))
+dev.off()
+```
+
+<img src="https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/DE.MDS.jpeg" width="700">
 
 
