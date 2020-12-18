@@ -32,6 +32,7 @@ setwd("/home/hoge/RNAseq_class")
 ```
 
 データの読み込み
+今回はシミュレーションで作ったデータを使います
 
 ```R
 d <- read.table("https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/SimData.txt",sep="\t",header=T,row.names=1)
