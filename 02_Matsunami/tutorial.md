@@ -114,4 +114,47 @@ dev.off()
 
 <img src="https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/DE.MDS.jpeg" width="500">
 
+発現変動遺伝子の検出
+
+```R
+#common dispersionを計算
+D <- estimateCommonDisp(D)
+
+#moderated tagwise dispersionを計算
+D <- estimateTagwiseDisp(D)
+
+#exact test (正確確率検定)で発現変動遺伝子を検出
+results <- exactTest(D,pair=c("G1","G2"))
+
+#tmp <- topTags(results, n=nrow(results$table))
+tmp <- topTags(results, n=NULL)
+
+#結果をファイルに書き出す
+write.table(tmp$table, "DE.results.tsv", sep="\t", quote=F)
+
+#P < 0.051だった遺伝子のみの結果をファイルに書き出す
+write.table(tmp[tmp$table$PValue <= 0.05,], "DE.results.p0.05.tsv", sep="\t", quote=F)
+```
+
+
+#MA plot（FDR < 0.05を赤で色分け）
+q.value <- p.adjust(results$table$PValue, method = "BH")
+is.DEG <- (q.value < 0.05)
+de.tags <- rownames(results$table)[is.DEG]
+jpeg('201214DE.MA.jpeg')
+plotSmear(results, de.tags = de.tags)
+abline(h=c(-2,2),col="blue")
+dev.off()
+
+count <- transform(D$count, PValue=results$table$PValue)
+count2 <- count[count$PValue <= 0.05,]
+count2$PValue <- NULL
+
+m <- as.matrix((cpm(count2)))
+jpeg('201214DE.heatmap.jpeg',width = 1024, height = 768)
+heatmap3(m, method="ward.D2", labRow="")
+dev.off()
+
+
+
 
