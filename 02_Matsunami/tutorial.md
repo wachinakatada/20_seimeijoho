@@ -53,6 +53,37 @@ d[,1]
 d[1,]
 ```
 
+## scatter plot
+
+```R
+#値が0だとエラーが出るので1を足す
+G1_1 <- d$G1_rep1 + 1 
+G1_2 <- d$G1_rep2 + 1 
+G1_3 <- d$G1_rep3 + 1 
+G2_1 <- d$G2_rep1 + 1 
+G2_2 <- d$G2_rep2 + 1 
+G2_3 <- d$G2_rep3 + 1 
+
+#1 pair表示
+plot(G1_1, G1_2, log="xy", col="black", pch=16, cex=0.5, xlim = c(1, 10000), ylim = c(1, 10000))
+```
+
+まとめて出力して"DE.scatter.jpeg"保存
+
+```R
+jpeg('DE.scatter.jpeg',width = 1024, height = 768)
+par(mfrow=c(2,3))
+par(ps = 20)
+plot(G1_1, G1_2, log="xy", col="black", pch=16, cex=0.5, xlim = c(1, 10000), ylim = c(1, 10000))
+plot(G1_2, G1_3, log="xy", col="black", pch=16, cex=0.5, xlim = c(1, 10000), ylim = c(1, 10000))
+plot(G1_3, G1_1, log="xy", col="black", pch=16, cex=0.5, xlim = c(1, 10000), ylim = c(1, 10000))
+plot(G2_1, G2_2, log="xy", col="black", pch=16, cex=0.5, xlim = c(1, 10000), ylim = c(1, 10000))
+plot(G2_2, G2_3, log="xy", col="black", pch=16, cex=0.5, xlim = c(1, 10000), ylim = c(1, 10000))
+plot(G2_1, G2_3, log="xy", col="black", pch=16, cex=0.5, xlim = c(1, 10000), ylim = c(1, 10000))
+dev.off()
+```
+
+
 
 ## 発現解析
 
