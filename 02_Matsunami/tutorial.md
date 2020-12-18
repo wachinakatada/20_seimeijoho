@@ -1,4 +1,8 @@
-# Rの起動とデータ読み込み
+#　RNAseq解析チュートリアル
+
+松波　雅俊（大学院医学研究科先進ゲノム検査医学講座）
+
+## Rの起動とデータ読み込み
 
 作業ディレクトリの作成とRの起動
 
@@ -32,8 +36,13 @@ d <- read.table("https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/m
 ```
 
 中身確認
+
 #行列の先頭行
 head(d)
+
+## 発現解析
+
+
 
 
 
