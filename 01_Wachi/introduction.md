@@ -2,6 +2,9 @@
 
 和智仲是（戦略的研究プロジェクトセンター）
 
+2020年10月12日作成
+
+2020年12月18日改訂
 
 
 ## 参考書
@@ -351,9 +354,11 @@ $ conda config --add channels bioconda
 
 
 
-5. 試しにインストールを行う
+5. プログラムのインストールを行う
 
 ```
+$ conda install sra-tools
+
 $ conda install vsearch
 $ conda install cutadapt
 $ conda install spades
@@ -361,6 +366,7 @@ $ conda install quast
 $ conda install prodigal
 $ conda install blast
 $ conda install rdp_classifier
+
 $ conda install admixture
 $ conda install eigensoft
 ```
@@ -375,15 +381,35 @@ $ conda install pkg-config
 
 
 
-1. 試しにインストールを行う（TCC-GUI）
+1. パッケージのインストールを行う
 
 ```
 # Rの起動
 $ R
 
 # Bioconductor のインストール
-if (!requireNamespace("BiocManager", quietly = TRUE))
+$ if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
+
+# edgeR をインストールする
+$ BiocManager::install("edgeR")
+
+# heatmap3 をインストールする
+$ BiocManager::install("heatmap3")
+
+# インストールしたパッケージの読み込み
+$ library(edgeR)
+$ library(heatmap3)
+```
+
+R でミラーを聞かれた場合は 66: (other mirrors) > 21: Japan (Yonezawa)
+
+
+
+X. Extra
+
+```
+# まとめてインストールすることもできる
 
 # 必要なパッケージの一覧を作成する
 libs <- c("shiny", "shinydashboard", "shinyWidgets", "plotly", "dplyr", "DT", "heatmaply", "tidyr","utils","rmarkdown","data.table","RColorBrewer", "knitr", "cluster", "shinycssloaders", "shinyBS", "MASS", "TCC")
@@ -394,53 +420,7 @@ for (i in libs){
      BiocManager::install(i, suppressUpdates=TRUE)
   }
 }
-
-# 一つのパッケージをインストールする場合
-BiocManager::install("shiny")
 ```
-
-R でミラーを聞かれた場合は 66: (other mirrors) > 21: Japan (Yonezawa)
-
-
-
-X. TCC-GUI の起動
-
-```
-shiny::runGitHub("TCC-GUI", "swsoyee", subdir = "TCC-GUI", launch.browser = TRUE)
-```
-
-
-
-【HELP】文字化けのエラーが起こるかもしれない。
-
-```
-$ git clone https://github.com/swsoyee/TCC-GUI
-
-$ cd TCC-GUI
-
-# 文字化けを起こす文字の検索
-$ grep -n × *.R
-
-# 結果
-server-simulation.R:108:        " × ",
-server-simulation.R:110:        " × ",
-server-tcc-calculation.R:196:                      " = Library Size × Normalization Factor."
-```
-
-テキストエディタで、これらの文字を x などに変更する。
-
-```
-$ vi server-simulation.R
-$ vi server-tcc-calculation.R
-```
-
-
-
-
-
-
-
-
 
 
 
