@@ -85,14 +85,7 @@ plot(G2_1, G2_3, log="xy", col="black", pch=16, cex=0.5, xlim = c(1, 10000), yli
 dev.off()
 ```
 
-https://github.com/wachinakatada/20_seimeijoho/blob/main/02_Matsunami/DE.scatter.jpeg
-
-![エビフライトライアングル](![エビフライトライアングル](https://github.com/wachinakatada/20_seimeijoho/blob/main/02_Matsunami/DE.scatter.jpeg
- "サンプル")
-
-d <- read.table("https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/SimData.txt",sep="\t",header=T,row.names=1)
-
-![scatter](![scatter](https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/DE.scatter.jpeg)
+![scatter](https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/DE.scatter.jpeg)
 
 
 ## 発現解析
