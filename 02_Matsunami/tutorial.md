@@ -176,7 +176,7 @@ dev.off()
 
 出力結果
 
-<img src="https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/Results/DE.neatmap.jpeg" width="500">
+<img src="https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/Results/DE.heatmap.jpeg" width="500">
 
 
 **お疲れ様です！！！**
