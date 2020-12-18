@@ -32,6 +32,7 @@ setwd("/home/hoge/RNAseq_class")
 ```
 
 データの読み込み
+
 今回はシミュレーションで作ったデータを使います
 
 ```R
@@ -84,7 +85,8 @@ plot(G2_1, G2_3, log="xy", col="black", pch=16, cex=0.5, xlim = c(1, 10000), yli
 dev.off()
 ```
 
-
+https://github.com/wachinakatada/20_seimeijoho/blob/main/02_Matsunami/DE.scatter.jpeg
+![エビフライトライアングル](![エビフライトライアングル](http://i.imgur.com/Jjwsc.jpg "サンプル")
 
 ## 発現解析
 
