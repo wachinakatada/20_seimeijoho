@@ -132,29 +132,49 @@ tmp <- topTags(results, n=NULL)
 #結果をファイルに書き出す
 write.table(tmp$table, "DE.results.tsv", sep="\t", quote=F)
 
-#P < 0.051だった遺伝子のみの結果をファイルに書き出す
+#P < 0.05だった遺伝子のみの結果をファイルに書き出す
 write.table(tmp[tmp$table$PValue <= 0.05,], "DE.results.p0.05.tsv", sep="\t", quote=F)
 ```
 
+MA plotを書く （FDR < 0.05を赤で色分け）
 
-#MA plot（FDR < 0.05を赤で色分け）
+```R
+#発現変動遺伝子を定義
 q.value <- p.adjust(results$table$PValue, method = "BH")
 is.DEG <- (q.value < 0.05)
 de.tags <- rownames(results$table)[is.DEG]
+
+#MA plot
 jpeg('201214DE.MA.jpeg')
 plotSmear(results, de.tags = de.tags)
 abline(h=c(-2,2),col="blue")
 dev.off()
+```
 
+出力結果
+
+<img src="https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/Results/DE.MA.jpeg" width="500">
+
+
+P < 0.05だった遺伝子でheat mapをかく
+
+```R
+#count dataからP < 0.05だった遺伝子のみ抽出
 count <- transform(D$count, PValue=results$table$PValue)
 count2 <- count[count$PValue <= 0.05,]
 count2$PValue <- NULL
 
+#cpmで正規化してplot
 m <- as.matrix((cpm(count2)))
 jpeg('201214DE.heatmap.jpeg',width = 1024, height = 768)
 heatmap3(m, method="ward.D2", labRow="")
 dev.off()
+```
+
+出力結果
+
+<img src="https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/Results/DE.neatmap.jpeg" width="500">
 
 
-
+**お疲れ様です！！！**
 
