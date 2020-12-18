@@ -16,16 +16,18 @@
 
 デスクトップの `Ubuntu` を起動
 
-```
-$ ssh [共有サーバーのアカウント名]@pjc.lab.u-ryukyu.ac.jp
-xxxxx@pjc.lab.u-ryukyu.ac.jp's password: 
-# [パスワードの入力]
-Last login: Thu Dec 17 15:17:20 2020 from rietc01603.igc.u-ryukyu.ac.jp
+"host.server"のアドレスは当日お知らせします。
 
-[xxxxx@pjc ~]$
+```
+$ ssh [共有サーバーのアカウント名]@host.server
+xxxxx@host.server's password: 
+# [パスワードの入力]
+Last login: Thu Dec 17 15:17:20 2020 from XX
+
+[xxxxx@host.server ~]$
 
 # 共有フォルダの確認
-[xxxxx@pjc ~]$ ls /mnt/bioInfo2020_share
+[xxxxx@host.server ~]$ ls /mnt/bioInfo2020_share
 ```
 
 
@@ -38,10 +40,10 @@ Last login: Thu Dec 17 15:17:20 2020 from rietc01603.igc.u-ryukyu.ac.jp
 
 ```
 login as: [共有サーバーのアカウント名]
-xxxxx@pjc.lab.u-ryukyu.ac.jp's password: 
+xxxxx@host.server's password: 
 # [パスワードの入力]
 
-[xxxxx@pjc ~]$
+[xxxxx@host.server ~]$
 
 # 共有フォルダの確認
 $ ls /mnt/bioInfo2020_share
@@ -60,15 +62,15 @@ Dockに追加しておいたほうが便利
 
 
 ```
-$ ssh [共有サーバーのアカウント名]@pjc.lab.u-ryukyu.ac.jp
-xxxxx@pjc.lab.u-ryukyu.ac.jp's password: 
+$ ssh [共有サーバーのアカウント名]@host.server
+xxxxx@host.server's password: 
 # [パスワードの入力]
-Last login: Thu Dec 17 15:17:20 2020 from rietc01603.igc.u-ryukyu.ac.jp
+Last login: Thu Dec 17 15:17:20 2020 from XX
 
-[xxxxx@pjc ~]$
+[xxxxx@host.server ~]$
 
 # 共有フォルダの確認
-[xxxxx@pjc ~]$ ls /mnt/bioInfo2020_share
+[xxxxx@host.server ~]$ ls /mnt/bioInfo2020_share
 ```
 
 
@@ -97,7 +99,7 @@ Last login: Thu Dec 17 15:17:20 2020 from rietc01603.igc.u-ryukyu.ac.jp
 
 
 
-**サーバ:** pjc.lab.u-ryukyu.ac.jp
+**サーバ:** host.server（当日にお知らせします）
 
 **ポート:** 22
 
