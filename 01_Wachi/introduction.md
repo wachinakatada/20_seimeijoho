@@ -47,14 +47,6 @@
 
 
 
-・TCC-GUI のインストール
-
-​	https://github.com/swsoyee/TCC-GUI
-
-​	インストールがうまく行かない場合はオンライン版を利用する
-
-​	https://infinityloop.shinyapps.io/TCC-GUI/
-
 ・MEGA のインストール
 
 ​	https://www.megasoftware.net
