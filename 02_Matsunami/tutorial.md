@@ -90,6 +90,12 @@ https://github.com/wachinakatada/20_seimeijoho/blob/main/02_Matsunami/DE.scatter
 ![エビフライトライアングル](![エビフライトライアングル](https://github.com/wachinakatada/20_seimeijoho/blob/main/02_Matsunami/DE.scatter.jpeg
  "サンプル")
 
+d <- read.table("https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/SimData.txt",sep="\t",header=T,row.names=1)
+
+![エビフライトライアングル](![エビフライトライアングル](https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/DE.scatter.jpeg
+ "サンプル")
+
+
 ## 発現解析
 
 
