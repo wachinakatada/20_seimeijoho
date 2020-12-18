@@ -434,17 +434,17 @@ $ zless All_Bifidobacteriaceae_mod.fasta.gz
 $ zgrep "Human" "All_Bifidobacteriaceae_mod.fasta.gz"
 
 # コピーを作成
-cp All_Bifidobacteriaceae_mod.fasta.gz copy.fasta.gz 
+$ cp All_Bifidobacteriaceae_mod.fasta.gz copy.fasta.gz 
 
 # 確認
-wc *.fasta.gz
+$ wc *.fasta.gz
 
 # 圧縮したまま統合 (cat)
-cat *.fasta.gz > cat.fasta.gz
+$ cat *.fasta.gz > cat.fasta.gz
 
 # 確認
 # なぜ 192 にならないのかわかりません、すみません
-# wc *.fasta.gz
+$ wc *.fasta.gz
       18      96    4787 All_Bifidobacteriaceae_mod.fasta.gz
       36     191    9574 cat.fasta.gz
       18      96    4787 copy.fasta.gz
