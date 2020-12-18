@@ -99,7 +99,7 @@ dev.off()
 
 ```R
 #比較グループを設定
-grp <- c("G1", "G1", "G1","G2", "G2", "G3")
+grp <- c("G1", "G1", "G1","G2", "G2", "G2")
 D <- DGEList(d, group=grp)
 
 #正規化
