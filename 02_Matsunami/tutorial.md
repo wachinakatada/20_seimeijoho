@@ -85,13 +85,22 @@ plot(G2_1, G2_3, log="xy", col="black", pch=16, cex=0.5, xlim = c(1, 10000), yli
 dev.off()
 ```
 
-![scatter](https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/DE.scatter.jpeg)
+出力結果
 
 <img src="https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/DE.scatter.jpeg" width="700">
+
 
 ## 発現解析
 
 
+```R
+#比較グループを設定
+grp <- c("G1", "G1", "G1","G2", "G2", "G3")
+D <- DGEList(d, group=grp)
+
+#正規化
+D <- calcNormFactors(D) 
+```
 
 
 
