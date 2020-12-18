@@ -87,7 +87,7 @@ dev.off()
 
 出力結果
 
-<img src="https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/DE.scatter.jpeg" width="700">
+<img src="https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/DE.scatter.jpeg" width="500">
 
 
 ## 発現解析
@@ -112,6 +112,6 @@ plotMDS(D, labels=grp, xlim = c(-5, 5), ylim = c(-5, 5))
 dev.off()
 ```
 
-<img src="https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/DE.MDS.jpeg" width="700">
+<img src="https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/02_Matsunami/DE.MDS.jpeg" width="500">
 
 
