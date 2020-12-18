@@ -25,6 +25,8 @@ library(heatmap3)
 
 "/home/hoge/"の部分は解析環境に合わせて変えてください
 
+ファイルは"RNAseq_class"ディレクトリに出力されます
+
 ```R
 setwd("/home/hoge/RNAseq_class")
 ```
@@ -37,8 +39,20 @@ d <- read.table("https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/m
 
 中身確認
 
+```R
 #行列の先頭行
 head(d)
+
+#G1_rep1の列
+d$G1_rep1
+
+#1の列目
+d[,1]
+
+#1行目
+d[1,]
+```
+
 
 ## 発現解析
 
