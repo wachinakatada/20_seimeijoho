@@ -86,7 +86,9 @@ dev.off()
 ```
 
 https://github.com/wachinakatada/20_seimeijoho/blob/main/02_Matsunami/DE.scatter.jpeg
-![エビフライトライアングル](![エビフライトライアングル](http://i.imgur.com/Jjwsc.jpg "サンプル")
+
+![エビフライトライアングル](![エビフライトライアングル](https://github.com/wachinakatada/20_seimeijoho/blob/main/02_Matsunami/DE.scatter.jpeg
+ "サンプル")
 
 ## 発現解析
 
