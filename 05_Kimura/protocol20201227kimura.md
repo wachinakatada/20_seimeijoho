@@ -4,7 +4,7 @@
 
 2020年12月19日作成
 
-2020年12月20日加筆 (markdown版の作成, condaでのインストール・RのBioconductorでのインストールなど: 和智仲是）
+2020年12月20日加筆 (markdown版の作成, condaでのインストール・RパッケージのBioconductorでのインストールなど: 和智仲是）
 
 
 ## 0) 事前の準備
@@ -211,7 +211,7 @@ $ cd ../../
 $ EIG/bin/convertf -p par.PED.EIGENSTRAT
 ```
 
-**パスが通っている場合（共有サーバーやcondaでインストールをしている場合）
+**パスが通っている場合（共有サーバーやcondaでインストールをしている場合）**
 ```
 $ convertf -p par.PED.EIGENSTRAT
 ```
@@ -263,11 +263,11 @@ numoutevec:      5
 ### 4-5) smartpcaの実行(時間差）
 ```
 $ EIG/bin/smartpca -p par.smartpca > pca_merged.log
+```
 
-もしくは
-
+**パスが通っている場合（共有サーバーやcondaでインストールをしている場合）**
+```
 $ smartpca -p par.smartpca > pca_merged.log
-
 ```
 
 ### 4-6) Rでプロットの作成
