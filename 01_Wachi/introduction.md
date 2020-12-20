@@ -359,6 +359,7 @@ $ conda install prodigal
 $ conda install blast
 $ conda install rdp_classifier
 
+$ conda install plink
 $ conda install admixture
 $ conda install eigensoft
 ```
@@ -380,18 +381,22 @@ $ conda install pkg-config
 $ R
 
 # Bioconductor のインストール
-$ if (!requireNamespace("BiocManager", quietly = TRUE))
+> if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
 # edgeR をインストールする
-$ BiocManager::install("edgeR")
+> BiocManager::install("edgeR")
 
 # heatmap3 をインストールする
-$ BiocManager::install("heatmap3")
+> BiocManager::install("heatmap3")
 
 # インストールしたパッケージの読み込み
-$ library(edgeR)
-$ library(heatmap3)
+> library(edgeR)
+> library(heatmap3)
+
+# R の終了
+> q()
+Save workspace image? [y/n/c]:
 ```
 
 R でミラーを聞かれた場合は 66: (other mirrors) > 21: Japan (Yonezawa)
@@ -418,7 +423,8 @@ for (i in libs){
 
 ## 付録1. Unixの基本的なコマンド
 
-
+unix.md を参照
+https://github.com/wachinakatada/20_seimeijoho/edit/main/01_Wachi/unix.md
 
 ## 付録2. condaの基本的なコマンド
 
