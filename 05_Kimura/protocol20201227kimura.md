@@ -69,8 +69,10 @@ $ conda install eigensoft
 ### 1-1) 計算機サーバへの接続
 http://xxx.xxx.u-ryukyu.ac.jp/ を参照
 
-### Tera TermおよびWinSCPを起動
+### SSH接続ツール (Tera Termなど) および ファイル転送ツール (WinSCPなど) を起動
+
 ホスト： xxx.xxx.u-ryukyu.ac.jp
+
 ユーザ名、passを入力
 
 ### 1-2) テストファイルディレクトリのコピー
