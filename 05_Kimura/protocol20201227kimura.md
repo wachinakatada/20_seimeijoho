@@ -8,23 +8,51 @@
 
 
 ## 0) 事前の準備
+
+### SSH接続ツール
+
 Tera TermまたはPuTTYのインストール(Windows)
+
+### ファイル転送ツール
 
 WinSCP(Windows)またはCyberduckのインストール
 
-SplitTree5のインストール
+### GUI解析ツール 
+
+#### SplitTree5
 
 ( https://software-ab.informatik.uni-tuebingen.de/download/splitstree5/welcome.html )
 
+
 以下のソフトウェアのインストールはサーバーを使う場合には不要
 
-Rおよび必要なパッケージ
+### Rおよび必要なパッケージ
 
-Plink ( https://www.cog-genomics.org/plink/ )
+#### パッケージのインストール
+```
+> if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
 
-ADMIXTURE ( http://dalexander.github.io/admixture/index.html )
+> BiocManager::install("SNPRelate")
+> BiocManager::install("SeqArray")
+> BiocManager::install("gdsfmt")
+> BiocManager::install("phangorn")
+```
 
-EIGENSOFT( https://reich.hms.harvard.edu/software )
+### 解析ツール
+
+#### Plink
+
+( https://www.cog-genomics.org/plink/ )
+
+#### ADMIXTURE
+
+( http://dalexander.github.io/admixture/index.html )
+
+#### EIGENSOFT
+
+( https://reich.hms.harvard.edu/software )
+
 
 これらについてはcondaで導入が可能
 
@@ -71,17 +99,6 @@ $ less merged.vcf.gz
 ### 2-1) Rの起動
 ```
 $ R
-```
-
-### 2-2-0) パッケージのインストール
-```
-> if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-
-> BiocManager::install("SNPRelate")
-> BiocManager::install("SeqArray")
-> BiocManager::install("gdsfmt")
-> BiocManager::install("phangorn")
 ```
 
 ### 2-2) パッケージの呼び出し
