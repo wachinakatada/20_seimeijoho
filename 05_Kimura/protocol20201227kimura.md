@@ -4,7 +4,7 @@
 
 2020年12月19日作成
 
-2020年12月20日加筆 (markdown版の作成, condaでのインストールなど: 和智仲是）
+2020年12月20日加筆 (markdown版の作成, condaでのインストール・RのBioconductorでのインストールなど: 和智仲是）
 
 
 ## 0) 事前の準備
@@ -66,7 +66,7 @@ $ conda install eigensoft
 
 ## 1) 準備
 
-### 1-1)計算機サーバへの接続
+### 1-1) 計算機サーバへの接続
 http://xxx.xxx.u-ryukyu.ac.jp/ を参照
 
 ### Tera TermおよびWinSCPを起動
