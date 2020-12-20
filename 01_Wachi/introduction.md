@@ -424,7 +424,8 @@ for (i in libs){
 ## 付録1. Unixの基本的なコマンド
 
 unix.md を参照
-https://github.com/wachinakatada/20_seimeijoho/edit/main/01_Wachi/unix.md
+
+https://github.com/wachinakatada/20_seimeijoho/blob/main/01_Wachi/unix.md
 
 ## 付録2. condaの基本的なコマンド
 
