@@ -19,10 +19,9 @@ WinSCP(Windows)またはCyberduckのインストール
 
 ### GUI解析ツール 
 
-#### SplitTree5
+#### SplitTree4
 
-( https://software-ab.informatik.uni-tuebingen.de/download/splitstree5/welcome.html )
-
+( https://software-ab.informatik.uni-tuebingen.de/download/splitstree4/welcome.html )
 
 以下のソフトウェアのインストールはサーバーを使う場合には不要
 
