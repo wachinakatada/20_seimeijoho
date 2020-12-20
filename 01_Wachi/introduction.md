@@ -391,8 +391,20 @@ $ R
 > BiocManager::install("heatmap3")
 
 # インストールしたパッケージの読み込み
-> library(edgeR)
-> library(heatmap3)
+> library("edgeR")
+> library("heatmap3")
+
+# 同様に SNPRelate, SeqArray, gdsfmt, phangorn をインストールする
+> BiocManager::install("SNPRelate")
+> BiocManager::install("SeqArray")
+> BiocManager::install("gdsfmt")
+> BiocManager::install("phangorn")
+
+# インストールしたパッケージの読み込み
+> library("SNPRelate")
+> library("SeqArray")
+> library("gdsfmt")
+> library("phangorn")
 
 # R の終了
 > q()
