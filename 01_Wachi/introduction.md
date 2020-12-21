@@ -46,12 +46,6 @@
 ​	http://imamachi-n.hatenablog.com/entry/2017/01/14/212719 等
 
 
-
-・MEGA のインストール
-
-​	https://www.megasoftware.net
-
-
 ## 0. Unix を使う方法
 
 ### 0.1. Mac の場合 (Unix)
