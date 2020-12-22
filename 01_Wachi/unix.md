@@ -180,6 +180,15 @@ $ wc -l [調べたいファイル名]
 
 ヒト・ボノボ・チンパンジー・ゴリラの腸内細菌を比較した研究 [Moeller, A. H., Caro-Quintero, A., Mjungu, D., Georgiev, A. V., Lonsdorf, E. V., Muller, M. N., ... & Ochman, H. (2016). Cospeciation of gut microbiota with hominids. *Science*, *353*(6297), 380-382.] のデータの一部を改変して利用
 
+**ファイル転送ツールを使うとき**
+`/mnt/bioInfo2020_share/wachi/data`をコピーする
+
+**共有サーバー上で作業をするとき**
+```
+cp -r /mnt/bioInfo2020_share/wachi/data exe2
+cd exe2
+```
+
 ```
 # それぞれのファイルの中身を less で確認
 $ less Human_Bifidobacteriaceae_mod.fasta
@@ -208,10 +217,10 @@ $ wc *fasta
      614     614   97375 total
 
 # 配列名の一覧を grep で確認
-grep "Human" "Human_Bifidobacteriaceae_mod.fasta"
-grep "Bonobo" "Bonobo_Bifidobacteriaceae_mod.fasta"
-grep "Chimp" "Chimp_Bifidobacteriaceae_mod.fasta"
-grep "Gorilla" "Gorilla_Bifidobacteriaceae_mod.fasta"
+$ grep "Human" "Human_Bifidobacteriaceae_mod.fasta"
+$ grep "Bonobo" "Bonobo_Bifidobacteriaceae_mod.fasta"
+$ grep "Chimp" "Chimp_Bifidobacteriaceae_mod.fasta"
+$ grep "Gorilla" "Gorilla_Bifidobacteriaceae_mod.fasta"
 ```
 
 
