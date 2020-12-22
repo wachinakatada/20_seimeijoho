@@ -1,4 +1,4 @@
-## バクテリアゲノム解析（2020年12月26日）
+## バクテリアゲノム機能解析（2020年12月26日）
 
 ### 解析ツールのインストール
 
@@ -25,7 +25,8 @@ rdp_classifier
 ( https://sourceforge.net/projects/rdp-classifier/ )
 
 
-#### condaを使ってインストールができる
+#### condaを使ってのインストールもできる
+参照: https://github.com/wachinakatada/20_seimeijoho/blob/main/01_Wachi/introduction.md
 
 ```
 $ conda install vsearch
