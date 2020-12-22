@@ -8,9 +8,9 @@
 
 それぞれ選択し、ダウンロード
 
-Windows / Mac / Linux
-
-GUI / Command line
-（今回はGUI）
-
-32 bit / 64 bit
+> Windows / Mac / Linux
+> 
+> GUI / Command line
+> （今回はGUI）
+> 
+> 32 bit / 64 bit
