@@ -344,7 +344,22 @@ $ conda config --add channels bioconda
 
 ```
 $ conda install sra-tools
+$ conda install samtools
+$ conda install bcftools
+$ conda install vcftools
 
+# 確認
+$ samtools
+samtools: error while loading shared libraries: libcrypto.so.1.0.0: cannot open shared object file: No such file or directory
+
+# もしエラーが出た場合、下記のようにすると解決するかもしれない
+$ cd ~/bin/miniconda3/lib
+$ ln -s libcrypto.so.1.1 libcrypto.so.1.0.0
+
+#　確認
+$ samtools
+
+# バクテリアゲノム機能解析ツール
 $ conda install vsearch
 $ conda install cutadapt
 $ conda install spades
@@ -353,6 +368,7 @@ $ conda install prodigal
 $ conda install blast
 $ conda install rdp_classifier
 
+# 集団遺伝解析ツール
 $ conda install plink
 $ conda install admixture
 $ conda install eigensoft
@@ -378,6 +394,7 @@ $ R
 > if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
+# 発現解析ツール
 # edgeR をインストールする
 > BiocManager::install("edgeR")
 
@@ -388,6 +405,7 @@ $ R
 > library("edgeR")
 > library("heatmap3")
 
+# 集団遺伝解析ツール
 # 同様に SNPRelate, SeqArray, gdsfmt, phangorn をインストールする
 > BiocManager::install("SNPRelate")
 > BiocManager::install("SeqArray")
