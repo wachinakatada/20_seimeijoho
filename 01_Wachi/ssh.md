@@ -77,7 +77,7 @@ Last login: Thu Dec 17 15:17:20 2020 from XX
 
 ### 2. ファイル転送ツールの導入
 
-cp -r /mnt/bioInfo2020_share
+cp -r /mnt/bioInfo2020_share bioInfo2020_share
 
 共有フォルダ `/mnt/bioInfo2020_share` の `sshLogin_ver1_1.pdf` 参照
 
