@@ -41,7 +41,7 @@ $ fastqc -o fastqc_HQ_R1/ HQ_R1.fastq.gz -t 2
 
 
 
-### ①-2　Raw dataのquality確認 [vsearch --fastq_eestats] 
+### ①-2 Raw dataのquality確認 [vsearch --fastq_eestats] 
 
 ```
 # 形
