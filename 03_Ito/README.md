@@ -4,7 +4,7 @@
 
 
 ### [ゲノムアセンブリーの流れ]
-
+<img src="https://raw.githubusercontent.com/wachinakatada/20_seimeijoho/main/03_Ito/fig/201226ゲノムアセンブリーの流れ.pdf" width="500">
 
 ### ①-1のみローカル（各自のPC）で行います。①-1終了後、sshで共有サーバに接続して下さい。
 
