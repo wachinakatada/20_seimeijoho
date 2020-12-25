@@ -173,7 +173,7 @@ $ quast.py scaffolds_qc_merged_HQ.fasta -o qc_merged_scaffolds
 ```
 
 
-### 解析ツールのインストール
+### [補足] 解析ツールのインストール
 
 vsearch
 ( https://github.com/torognes/vsearch )
