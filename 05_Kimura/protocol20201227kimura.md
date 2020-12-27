@@ -110,19 +110,19 @@ $ R
 > library("phangorn")
 ```
 
-### 2-2) VCFファイルからGDSフォーマットへの変換
+### 2-3) VCFファイルからGDSフォーマットへの変換
 ```
 > vcf.fn <- "merged.vcf.gz"
 > snpgdsVCF2GDS(vcf.fn,"basic.gds",method="copy.num.of.ref")
 > snpFromVCFtoGDS <- snpgdsOpen("basic.gds")
 ```
 
-### 2-3) VCFファイルからGDSフォーマットへの変換
+### 2-4) VCFファイルからGDSフォーマットへの変換
 ```
 > dissMatrix  <-  snpgdsDiss(snpFromVCFtoGDS, autosome.only=FALSE, remove.monosnp=FALSE, missing.rate=NaN, num.thread=4, verbose=TRUE)
 ```
 
-### 2-4) NEXUSファイルの作成
+### 2-5) NEXUSファイルの作成
 ```
 > sampleNumber <- length(read.gdsn(index.gdsn(snpFromVCFtoGDS, "sample.id")))
 
@@ -134,12 +134,12 @@ $ R
 > phangorn::writeDist(outputDist, file=paste(vcf.fn, ".nj.nex", sep=""), format="nexus")
 ```
 
-### 2-5) Rの終了
+### 2-6) Rの終了
 ```
 > q()
 ```
 
-### 2-6) SplitTreeを起動し、merged.vcf.gz.nj.nexをopen
+### 2-7) SplitTreeを起動し、merged.vcf.gz.nj.nexをopen
 
 neibour-netネットワーク図が出たことを確認
 
