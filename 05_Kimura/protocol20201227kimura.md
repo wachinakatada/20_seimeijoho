@@ -117,7 +117,7 @@ $ R
 > snpFromVCFtoGDS <- snpgdsOpen("basic.gds")
 ```
 
-### 2-4) VCFファイルからGDSフォーマットへの変換
+### 2-4) GDSフォーマットから距離行列への変換
 ```
 > dissMatrix  <-  snpgdsDiss(snpFromVCFtoGDS, autosome.only=FALSE, remove.monosnp=FALSE, missing.rate=NaN, num.thread=4, verbose=TRUE)
 ```
