@@ -57,7 +57,7 @@ $ vsearch --fastq_mergepairs [ファイル名 (R1, .fastq.gz)] \
 -reverse [ファイル名 (R2, .fastq.gz)] \
 --fastqout [マージされたファイル名( .fastq)] \
 --fastqout_notmerged_fwd [マージされなかったファイル名 (R1,.fastq)] \
---fastqout_notmerged_rev [マージされなかったファイル名 (R1,.fastq)] \
+--fastqout_notmerged_rev [マージされなかったファイル名 (R2,.fastq)] \
 --threads [数値] --fastq_allowmergestagger --fastq_minovlen [数値] --fastq_maxdiffs [数値]
 
 # 例
