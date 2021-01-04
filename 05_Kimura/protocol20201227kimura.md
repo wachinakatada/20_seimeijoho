@@ -4,7 +4,9 @@
 
 2020年12月19日作成
 
-2020年12月20日加筆 (markdown版の作成, condaでのインストール・RパッケージのBioconductorでのインストールなど: 和智仲是）
+2020年12月20日加筆
+
+(markdown版の作成, condaでのインストール・RパッケージのBioconductorでのインストールなど: 和智仲是）
 
 
 ## 0) 事前の準備
@@ -141,9 +143,9 @@ $ R
 
 ### 2-7) SplitTreeを起動し、merged.vcf.gz.nj.nexをopen
 
-neibour-netネットワーク図が出たことを確認
+- neibour-netネットワーク図が出たことを確認
 
-TreesタブからNJを選びApply
+- `Trees` タブから `NJ` を選び `Apply`
 
 
 ## 3) ADMIXTURE解析をしよう
